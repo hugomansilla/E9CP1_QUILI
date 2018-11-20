@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Ejercicio 02</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header class="header__main">
@@ -73,7 +74,7 @@
 			<p class="article__text-footer">Voluptatibus dignissimos eaque illum molestias similique quod temporibus totam veniam, alias fuga esse iusto laboriosam maxime sequi perferendis quidem error, at aliquam odit sapiente, amet quibusdam magni dolorem nesciunt! Odio.</p>
 		</footer>
 	</article>
-	<article class="article">
+	<article class="article cuarto">
 		<header class="article__header">
 			<h2 class="article__title">A nemo est dignissimos, assumenda in voluptatum</h2>
 			<p class="article__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, facilis ex rem quae excepturi iure libero assumenda temporibus magni placeat provident dolorum incidunt, laboriosam cum quia tempora, iusto molestiae perferendis.</p>
@@ -91,6 +92,23 @@
 			<p class="article__text-footer">Repudiandae cupiditate ducimus consequuntur, quam in alias! Maiores nam saepe at odio nemo, voluptatum maxime corporis explicabo, fuga iusto. Temporibus omnis sequi odio, cumque voluptatibus a nesciunt natus saepe vel.</p>
 		</footer>
 	</article>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("body article:nth-child(5) ul li:nth-child(4) a").html('<a href="http://pinterest.com">Pinterest</a>');
+			$('a[href="#"]').click(function(e){
+				e.preventDefault();
+			})
+			
+/*Crear un variable que multiplique por 2*/
+
+			$(".header__main h2").css("font-size","3em");
+
+		})
+		
+	</script>
+
+<!-- Ultimo parrafo-->
 	<article class="article">
 		<header class="article__header">
 			<h2 class="article__title">Sunt dolorem tempora accusantium debitis maxime voluptatum veritatis</h2>
