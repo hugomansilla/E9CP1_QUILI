@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>Ejercicio 03</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <body>
-
 	<nav class="navbar">
 		<ul>
 			<li><a href="#">link 1</a></li>
@@ -21,6 +21,17 @@
 			<li><a href="#">link 9</a></li>
 		</ul>
 	</nav>
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("body nav ul li:nth-child(4)").append('<ul><li><a href="#">link 4.a</a></li></ul>');
+			$("body nav ul li:nth-child(4)").before('<li><a href="#">link 3.5</a></li>');
+			$("body nav ul li:nth-child(6)").prepend('😎' );
+			$("body nav ul li:nth-child(6)").after('🙂');
+
+		})
+	</script>
+
 
 </body>
 </html>
